@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Welcome from "./Welocome";
+
+const members = [
+  { name: "곰돌이", age: 23, addr: "충남 천안시", gender: "M", isAdult: true },
+  { name: "장원영", age: 23, addr: "충남 천안시", gender: "M", isAdult: true },
+  { name: "안유진", age: 23, addr: "충남 천안시", gender: "M", isAdult: true },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {members.map((member, index) => {
+        return <Welcome key={index} member={member} />;
+      })}
+    </>
   );
 }
 

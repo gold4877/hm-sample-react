@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.name {
+  font-size: 12px;
+  font-style: italic;
+  background-color: antiquewhite;
+}
+
+.addr {
+  font-size: 12px;
+  font-style: italic;
+  background-color: #61dafb;
+}
+
+.gender {
+  font-size: 12px;
+  font-style: italic;
+  background-color: greenyellow;
+}
+
+.age {
+  font-size: 12px;
+  font-style: italic;
+  background-color: royalblue;
+}
+
+.job {
+  font-size: 12px;
+  font-style: italic;
+  background-color: cadetblue;
+}
